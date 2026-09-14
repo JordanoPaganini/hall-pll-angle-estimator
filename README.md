@@ -20,7 +20,8 @@ The project targets the STM32F407VET6 and is designed to interpret Hall states a
 
 ## Status
 
-Project setup and engineering definition are in progress. The final estimator will use a PLL.
+The initial STM32CubeIDE project for the STM32F407VET6 is available under `STM32/`.
+Hall inputs, clock configuration, and the PLL estimator are still pending. The final estimator will use a PLL.
 
 ## License
 

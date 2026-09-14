@@ -1,0 +1,12 @@
+# Local STM32CubeIDE workspace state
+.metadata/
+
+# Generated build output
+Debug/
+Release/
+
+# Local editor and operating system files
+*.bak
+*.tmp
+Thumbs.db
+Desktop.ini
