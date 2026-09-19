@@ -1,0 +1,31 @@
+# C and STM32 build outputs
+*.d
+*.o
+*.obj
+*.a
+*.elf
+*.hex
+*.bin
+*.dfu
+*.map
+*.lst
+*.su
+*.gch
+*.pch
+*.exe
+*.out
+
+# Build directories
+build/
+Debug/
+Release/
+cmake-build-*/
+
+# Local IDE and operating system state
+.metadata/
+.settings/
+.vs/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
