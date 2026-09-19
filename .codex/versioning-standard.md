@@ -45,25 +45,31 @@ Do not use `legacy/vN` branches for active feature development, experiments, rel
 
 ## Commit Messages
 
-Use Conventional Commits and include the `[Codex]` tag in every commit created by Codex.
-
-Format:
+Use Conventional Commits. Every activity in a commit message must have its own line in this format:
 
 ```text
-<type>(<optional-scope>): [Codex] <description>
+<type>(<scope>): <description>
 ```
 
-Examples:
+Place `[Codex]` immediately after the colon only on lines describing work performed by Codex. Do not tag work performed by the user, even when Codex creates the commit. The first activity line is the commit subject. For commits containing multiple activities, follow it with one formatted line per additional activity. Do not add unformatted narrative paragraphs or attribution notes.
+
+Single-activity examples:
 
 ```text
 feat(pll): [Codex] add rotor angle tracking loop
-fix(hall): [Codex] reject invalid transition sequence
-docs: [Codex] explain estimator code flow
+fix(hall): reject invalid transition sequence
+```
+
+Mixed-activity example:
+
+```text
+chore(stm32): add user-configured CubeMX project
+chore(git): [Codex] add STM32 ignore rules
 ```
 
 Use an established Conventional Commits type such as `feat`, `fix`, `docs`, `refactor`, `test`, `build`, `ci`, `chore`, `perf`, or `revert`. Keep the description concise, imperative, and specific.
 
-For a breaking change, add `!` before the colon and include an appropriate `BREAKING CHANGE:` footer when the impact needs explanation.
+For a breaking change, add `!` before the colon on the affected activity line and explain the impact in its description.
 
 ## Release Review
 
